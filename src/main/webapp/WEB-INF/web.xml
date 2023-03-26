@@ -5,4 +5,21 @@
          http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
 	version="3.1">
 
+	<servlet>
+		<servlet-name>NewPetServlet</servlet-name>
+		<servlet-class>mik.prog4.zh1.servlet.NewPetServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>PetListServlet</servlet-name>
+		<servlet-class>mik.prog4.zh1.servlet.PetListServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>NewPetServlet</servlet-name>
+		<url-pattern>/newPet</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>PetListServlet</servlet-name>
+		<url-pattern>/petList</url-pattern>
+	</servlet-mapping>
 </web-app>
